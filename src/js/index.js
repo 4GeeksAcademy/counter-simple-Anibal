@@ -14,6 +14,7 @@ let contador = 0;
 setInterval (renderizado , 1000)
 
 function renderizado() {
-    contador += 1;
     ReactDOM.render(<Home seconds = {contador} />, document.querySelector("#app"));
+    contador += 1;
+
 }
